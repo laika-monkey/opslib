@@ -6,7 +6,7 @@ def newdtg(d, seconds=1, fmt_dtg='%Y-%m-%d-%H-%M-%S', **kwargs):
 		raise TypeError, 'NEWDTG input must be of type string'
 	
 	#_convert to epoch time
-	e = dtg2epoch(dtg, fmt_dtg, **kwargs)
+	e = dtg2epoch(d, fmt_dtg, **kwargs)
 	
 	e += seconds
 
